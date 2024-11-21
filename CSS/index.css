@@ -69,8 +69,8 @@ body{
     padding: 20px;
     font-size: 20px;
 }
-
-@media screen and (min-width:400px) and (max-width:700px){
+/*Para hacerlo responsive*/
+@media screen and (width < 900px){
     .logo img {
         height: 50px;
         width: auto;
@@ -83,12 +83,15 @@ body{
     .section {
         flex-direction: column;
         margin: 10px;
+        justify-content: center;
+        align-items: center;
     }
 
     .img_index {
         width: 100%;
         max-width: 350px;
         padding: 10px;
+        order: 1;
     }
 
     .txt {
@@ -98,5 +101,6 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        order: 2;
     }
 }
