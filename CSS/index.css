@@ -69,3 +69,34 @@ body{
     padding: 20px;
     font-size: 20px;
 }
+
+@media screen and (min-width:400px) and (max-width:700px){
+    .logo img {
+        height: 50px;
+        width: auto;
+    }
+
+    .nav ul li a {
+        font-size: 14px;
+    }
+
+    .section {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .img_index {
+        width: 100%;
+        max-width: 350px;
+        padding: 10px;
+    }
+
+    .txt {
+        font-size: 16px;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
