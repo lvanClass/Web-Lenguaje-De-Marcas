@@ -1,16 +1,17 @@
 /*Base del estilo de la pagina*/
-*{
+* {
     color: white;
     margin: 0;
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-body{
+body {
     background-color: #3B3936;
 }
+
 /*Estilo del logo y el NAV*/
-.header {
+#header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,13 +52,14 @@ body{
     color: white;
 
 }
-/*Sections*/
-.img_index{
+
+/*Estilo de los sections*/
+.img_index {
     width: 450px;
     padding: 20px;
 }
 
-.section{
+.section {
     display: flex;
     border: 5px solid black;
     border-radius: 10px;
@@ -65,12 +67,61 @@ body{
     background-color: black;
 }
 
-.txt{
+.txt {
     padding: 20px;
     font-size: 20px;
 }
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: black;
+}
+
+.footer-logo {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-address,
+.footer-contact,
+.footer-hours,
+.footer-legal {
+    margin: 5px 0;
+}
+
+.footer-social {
+    margin: 10px 0;
+}
+
+.footer-links {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+}
+
 /*Para hacerlo responsive*/
-@media screen and (width < 900px){
+@media screen and (width < 900px) {
     .logo img {
         height: 50px;
         width: auto;
@@ -102,5 +153,14 @@ body{
         justify-content: center;
         align-items: center;
         order: 2;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer-links a {
+        display: block;
+        margin: 5px;
     }
 }
