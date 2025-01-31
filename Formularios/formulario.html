@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario de Opciones</title>
+        <link rel="stylesheet" href="../CSS/formulario.css">
+    </head>
+    <body>
+        <header id="header">
+            <div class="logo">
+                <h1>Formulario de Opciones</h1>
+            </div>
+            <div class="logo">
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../article_LOL.html">LOL</a></li>
+                        <li><a href="../article_RL.html">RL</a></li>
+                        <li><a href="../article_VAL.html">VAL</a></li>
+                        <li><a href="formulario.html">Formularios</a></li>
+                    </ul>
+                </nav>
+        </header>
+
+        <main class="div-form">
+            <section class="form-section">
+                <h2>Formulario de Contacto</h2>
+                <form id="options-form" action="#" method="POST">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div>
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>    
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+            <br>
+            <section class="form-section">
+                <h2>Suscríbete a nuestras novedades</h2>
+                <form id="options-form" action="#" method="POST">
+                    <div>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+                    </div>
+
+                    <div>
+                        <label for="password">Introduce tu contraseña:</label>
+                        <input
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        placeholder="Introduce tu contraseña" 
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" 
+                        required>
+                    </div>
+
+                    <div>
+                        <label for="preferences">Elige tu preferencia:</label>
+                        <select id="preferences" name="preferences" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="lol">League of Legends</option>
+                            <option value="valorant">Valorant</option>
+                            <option value="rocket-league">Rocket League</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="age">Edad:</label>
+                        <input type="number" id="age" name="age" min="13" max="99" placeholder="Ingresa tu edad" required>
+                    </div>
+
+                    <div>
+                        <label for="gender">Género:</label>
+                        <select id="gender" name="gender">
+                            <option value="" disabled selected>Selecciona tu género</option>
+                            <option value="male">Masculino</option>
+                            <option value="female">Femenino</option>
+                            <option value="other">Otro</option>
+                            <option value="prefer-not">Prefiero no decirlo</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>
+                            <input type="checkbox" name="newsletter" value="yes">
+                            Deseo recibir el boletín de noticias
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            <input type="checkbox" name="offers" value="yes">
+                            Quiero recibir ofertas especiales
+                        </label>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 DAWeSPORTS - Todos los derechos reservados.</p>
+        </footer>
+    </body>
+</html>
